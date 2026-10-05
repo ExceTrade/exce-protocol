@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exce · trading protocol on Robinhood Chain</title>
+<meta name="description" content="Exce is a trading protocol on Robinhood Chain; each outside fact on this page is a single dated record.">
+<link rel="canonical" href="https://exce.trade/">
+<meta name="theme-color" content="{{themeColor}}">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="32x32">
+<link rel="apple-touch-icon" href="/logo-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Schibsted+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="theme.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Jump past the menu</a>
+<nav class="nav" id="nav" aria-label="Site sections">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Exce, home"><img src="logo-64.png" srcset="logo-64.png 1x, logo-128.png 2x" width="34" height="34" alt=""><span>Exce</span></a>
+    <div class="links"><a href="#book">Register</a><a href="#how">Process</a><a href="#doors">Uses</a><a href="#check">Match</a></div>
+    <div class="right"><div class="status" id="status">{{status}}</div><div class="socials" id="socials" aria-label="Channels">{{socials}}</div></div>
+  </div>
+</nav>
+
+<section class="ca-band" aria-label="Where the contract goes">
+  <div class="wrap" id="ca">{{ca}}</div>
+</section>
+
+<div class="dateline">
+  <div class="wrap">
+    <span>Records first, claims second</span>
+    <span id="dateline-mid">{{dateline-mid}}</span>
+    <a href="#book">Open the register &rarr;</a>
+  </div>
+</div>
+
+<main id="main">
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="kicker">Trading protocol on Robinhood Chain</p>
+      <h1>Nothing here counts until someone <em>writes it down</em>.</h1>
+      <p class="lede">Exce is a trading protocol on Robinhood Chain, and this page shows only what its team has stated. Each outside fact (network, contract, channels) gets one record carrying a state and a date, so silence never poses as an answer.</p>
+      <div class="actions">
+        <a class="btn primary" href="#book">Open the register</a>
+        <a class="link" href="#check">Match an address &rarr;</a>
+        <a class="link" href="#how">The stages a record passes &rarr;</a>
+      </div>
+    </div>
+    <figure class="tree">
+      <div class="stage"><canvas id="stack" data-states="{{figureStates}}" role="img" aria-label="A stack of four blocks, one per register record; stated records are solid, waiting ones are outlined"></canvas></div>
+      <figcaption id="fig-caption">{{fig-caption}}</figcaption>
+    </figure>
+  </div>
+</section>
+
+<div class="account" aria-label="Register summary">
+  <div class="wrap" id="tiles">{{tiles}}</div>
+</div>
+<div class="wrap source">Tallied by this page from its own register, not fetched elsewhere &middot; <a class="link" href="#book">see the records</a></div>
+
+<section class="chapter" id="how">
+  <div class="wrap">
+    <div class="chead">
+      <div class="no">Part 1</div>
+      <div><h2>The path of a record</h2><p>Every fact earns its slot by clearing four stages. Skip one and the slot stays blank.</p></div>
+    </div>
+    <div class="howto">
+      <div class="diagram" aria-hidden="true">
+        <svg viewBox="0 0 290 420" fill="none" stroke-width="1.2">
+          <g data-step="1">
+            <rect class="box" x="30" y="16" width="200" height="74"/>
+            <text class="t1" x="130" y="46" text-anchor="middle">a statement</text>
+            <text class="t2" x="130" y="70" text-anchor="middle">handed over by the team</text>
+            <path class="ar" d="M130 90 V166"/><path class="hd" d="M124 160 L130 170 L136 160"/>
+            <text class="lb" x="142" y="134">filed and dated</text>
+          </g>
+          <g data-step="2">
+            <rect class="box" x="30" y="172" width="200" height="74"/>
+            <text class="t1" x="130" y="202" text-anchor="middle">the register</text>
+            <text class="t2" x="130" y="226" text-anchor="middle">one record per fact</text>
+            <path class="ar" d="M110 326 V252"/><path class="hd" d="M104 258 L110 248 L116 258"/>
+            <text class="lb" x="12" y="290">read at load</text>
+          </g>
+          <g data-step="3">
+            <path class="ar g" d="M150 250 V320"/><path class="hd g" d="M144 314 L150 324 L156 314"/>
+            <text class="lb g" x="162" y="290">slot goes live</text>
+            <rect class="box" x="30" y="328" width="200" height="74"/>
+            <text class="t1" x="130" y="358" text-anchor="middle">this page</text>
+            <text class="t2" x="130" y="382" text-anchor="middle">live only when stated</text>
+          </g>
+          <g data-step="4" class="loss">
+            <path class="ar r" d="M230 42 H262 V376 H236"/><path class="hd r" d="M242 370 L232 376 L242 382"/>
+            <text class="lb r" transform="translate(276 150) rotate(90)">a doubt switches it off</text>
+          </g>
+        </svg>
+      </div>
+      <div>
+        <div class="stepl"><div class="n">i.</div><div><h3>The team states it</h3><p>The team hands over a fact: an address, a handle, a network. Until that happens, the record reads absent.</p><span class="aside">Nothing is guessed to fill a gap.</span></div></div>
+        <div class="stepl"><div class="n">ii.</div><div><h3>It gets dated</h3><p>Every record carries the date it was last looked at, so an old answer shows its age instead of posing as fresh.</p></div></div>
+        <div class="stepl"><div class="n">iii.</div><div><h3>The slot lights up</h3><p>A stated record alone turns a slot live: a link opens, an address can be copied. Absent and unconfirmed ones stay flat and quiet.</p></div></div>
+        <div class="stepl"><div class="n">iv.</div><div><h3>A doubt switches it off</h3><p>When a statement is questioned, the record drops to unconfirmed and the slot goes still again until someone restates it.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="chapter night" id="book">
+  <div class="wrap">
+    <div class="chead">
+      <div class="no">Part 2</div>
+      <div><h2>The register</h2><p>Every outside fact, one line each, shown the way the page reads it today.</p></div>
+    </div>
+    <div class="logwrap">
+      <header><span>Record</span><span>State</span><span>Value</span><span>Source</span><span id="log-count">{{log-count}}</span></header>
+      <div class="log" id="log">{{log}}</div>
+    </div>
+    <div class="after"><a class="link" href="#check">Match an address &rarr;</a><a class="link" href="#main">Back to the top &rarr;</a></div>
+  </div>
+</section>
+
+<section class="chapter" id="doors">
+  <div class="wrap">
+    <div class="chead">
+      <div class="no">Part 3</div>
+      <div><h2>Who this page serves</h2></div>
+    </div>
+    <div class="ways">
+      <div class="way">
+        <div class="who">For anyone holding an address</div>
+        <h3>Check first, trust later</h3>
+        <p>Paste any 0x string. The page sets it against the register and answers in plain terms: matched, not matched, or nothing to set it against yet.</p>
+        <ul><li><b>Any letter casing</b> works</li><li>No string is called broken for being unknown</li></ul>
+        <a class="btn" href="#check">Open the matcher</a>
+      </div>
+      <div class="way">
+        <div class="who">For anyone following along</div>
+        <h3>Watch the two channels</h3>
+        <p>The two icons at the top right wake the moment a handle is stated. Until then they hold still and show their check date.</p>
+        <ul><li><b>Two</b> channels, both recorded</li><li>No link is ever invented</li></ul>
+        <a class="btn" href="#book">See their records</a>
+      </div>
+      <div class="way">
+        <div class="who">For anyone building against it</div>
+        <h3>Take the network details</h3>
+        <p>Network id and endpoint come directly from this network's record, so whatever you copy matches what was stated.</p>
+        <ul id="rpc-list">{{rpc-list}}</ul>
+        <span id="rpc-btn">{{rpc-btn}}</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="chapter token" id="check" style="padding-top:0">
+  <div class="wrap">
+    <div>
+      <h2>Match an address</h2>
+      <p>Once stated, the contract takes the top slot of this page at full length. Until then, this box says plainly what can and cannot be compared.</p>
+      <form class="ca" id="matcher" autocomplete="off" novalidate>
+        <label class="ca-k" for="m-in">Address</label>
+        <input id="m-in" name="addr" type="text" inputmode="text" spellcheck="false" autocapitalize="off" placeholder="0x followed by 40 hex digits">
+        <button type="submit" id="m-go">Match</button>
+        <output class="ca-x" id="m-out" role="status" aria-live="polite">Waiting for an address</output>
+      </form>
+    </div>
+    <div class="terms2">
+      <div><span>While unstated</span><b>the slot is flat, dated, and cannot be copied</b></div>
+      <div><span>Once stated</span><b>the full address shows and one tap copies the whole string</b></div>
+      <div><span>A look-alike</span><b>any other 0x string learns it's unlisted, never that it's malformed</b></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div>
+      <a class="brand" href="/" aria-label="Exce, home"><img src="logo-64.png" srcset="logo-64.png 1x, logo-128.png 2x" width="30" height="30" alt=""><span>Exce</span></a>
+      <p>Exce is a trading protocol on Robinhood Chain. Nothing here is advice; read any contract yourself before relying on it.</p>
+      <span id="foot-chain">{{foot-chain}}</span>
+    </div>
+    <div><h4>Exce</h4><a href="#how">Process</a><a href="#book">Register</a><a href="#doors">Uses</a><a href="#check">Match an address</a></div>
+    <div><h4>Elsewhere</h4><span id="foot-social">{{foot-social}}</span></div>
+  </div>
+</footer>
+
+<script type="application/json" id="records-baked">{{recordsJson}}</script>
+<script type="module" src="app.js"></script>
+</body>
+</html>

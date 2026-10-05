@@ -1,0 +1,43 @@
+{
+  "name": "Exce",
+  "domain": "exce.trade",
+  "records": {
+    "chain": {
+      "label": "Chain",
+      "kind": "chain",
+      "state": "stated",
+      "asOf": "2026-09-02",
+      "source": "client statement 2026-09-02 batch-level",
+      "value": {
+        "name": "Robinhood Chain",
+        "chainId": 4663,
+        "chainIdHex": "0x1237",
+        "rpc": "https://rpc.mainnet.chain.robinhood.com"
+      }
+    },
+    "contract": {
+      "label": "Contract address",
+      "kind": "address",
+      "state": "absent",
+      "asOf": "2026-10-05",
+      "source": "none stated",
+      "value": null
+    },
+    "x": {
+      "label": "X",
+      "kind": "social",
+      "state": "stated",
+      "asOf": "2026-10-05",
+      "source": "client confirmation 2026-10-05",
+      "url": "https://x.com/Exce_Trade"
+    },
+    "github": {
+      "label": "GitHub",
+      "kind": "social",
+      "state": "stated",
+      "asOf": "2026-10-05",
+      "source": "client confirmation 2026-10-05",
+      "url": "https://github.com/ExceTrade/exce-protocol"
+    }
+  }
+}

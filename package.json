@@ -1,0 +1,15 @@
+{
+  "name": "exce",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "exce.trade, a register-first landing page. Deploy output: dist/",
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "gates": "node tools/gates.mjs",
+    "serve": "node tools/serve.mjs"
+  },
+  "devDependencies": {
+    "sharp": "^0.35.5"
+  }
+}

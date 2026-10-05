@@ -1,0 +1,51 @@
+/* Semantic colour roles. No literals here: every value is a --c-* token (generated from tokens.json into tokens.css)
+   or a color-mix() of them. */
+
+:root {
+  --paper: var(--c-cream);
+  --paper-2: color-mix(in srgb, var(--c-cream) 92%, var(--c-ink));
+  --paper-3: color-mix(in srgb, var(--c-cream) 84%, var(--c-ink));
+  --ink: var(--c-ink);
+  --ink-2: color-mix(in srgb, var(--c-ink) 82%, var(--c-cream));
+  --muted: var(--c-sage);
+  --faint: var(--c-sage);
+  --rule: color-mix(in srgb, var(--c-ink) 24%, var(--c-cream));
+  --rule-2: color-mix(in srgb, var(--c-ink) 14%, var(--c-cream));
+  --field: var(--c-cream);
+  --field-edge: color-mix(in srgb, var(--c-ink) 50%, var(--c-cream));
+  --accent: var(--c-forest);
+  --accent-2: var(--c-forest);
+  --warn: color-mix(in srgb, var(--c-coral) 45%, var(--c-ink));
+  --mint: var(--c-mint);
+  --coral: var(--c-coral);
+  --slate: var(--c-slate);
+  --night: var(--c-night);
+  --night-2: color-mix(in srgb, var(--c-night) 90%, var(--c-bone));
+  --night-ink: var(--c-bone);
+  --night-muted: color-mix(in srgb, var(--c-bone) 68%, var(--c-night));
+  --night-rule: color-mix(in srgb, var(--c-bone) 18%, var(--c-night));
+  --night-hi: var(--c-mint);
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: var(--c-night);
+    --paper-2: color-mix(in srgb, var(--c-night) 90%, var(--c-bone));
+    --paper-3: color-mix(in srgb, var(--c-night) 82%, var(--c-bone));
+    --ink: var(--c-bone);
+    --ink-2: color-mix(in srgb, var(--c-bone) 85%, var(--c-night));
+    --muted: color-mix(in srgb, var(--c-bone) 66%, var(--c-night));
+    --faint: color-mix(in srgb, var(--c-bone) 66%, var(--c-night));
+    --rule: color-mix(in srgb, var(--c-bone) 22%, var(--c-night));
+    --rule-2: color-mix(in srgb, var(--c-bone) 14%, var(--c-night));
+    --field: color-mix(in srgb, var(--c-night) 90%, var(--c-bone));
+    --field-edge: color-mix(in srgb, var(--c-bone) 40%, var(--c-night));
+    --accent: var(--c-mint);
+    --accent-2: var(--c-mint);
+    --warn: var(--c-coral);
+    --night: color-mix(in srgb, var(--c-night) 85%, var(--c-slate));
+    --night-2: color-mix(in srgb, var(--c-night) 70%, var(--c-slate));
+    color-scheme: dark;
+  }
+}
